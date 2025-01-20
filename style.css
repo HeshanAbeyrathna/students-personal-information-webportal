@@ -76,7 +76,7 @@ nav {
     font-size: 1rem;
     color: #fff;
     background-color: #1d4ed8;
-    border-radius: 5px;
+    border-radius: 18px;
     cursor: pointer;
     transition: all 0.3 ease;
 }
@@ -126,31 +126,35 @@ header .content p {
     color: #000;
 }
 
-section .header{
+section .header {
     margin-bottom: 1rem;
     color: #0833a8;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 600;
 }
-.features{
+
+.features {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
-.features .card{
+
+.features .card {
     background-color: #d4d4da;
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
-.features .card:hover{
+
+.features .card:hover {
     background-color: #c2c6ed;
     border-color: #000;
 }
-.features .card span{
+
+.features .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -159,39 +163,47 @@ section .header{
     color: #fff;
     border-radius: 5px;
 }
-.features .card h4{
+
+.features .card h4 {
     margin-bottom: 0.5rem;
     color: #1343c5;
     font-size: 1.2rem;
     font-weight: 600;
 }
-.features .card p{
+
+.features .card p {
     color: hwb(239 11% 72%);
     margin-bottom: 1rem;
 }
-.features .card a{
+
+.features .card a {
     color: #000;
     transition: all 0.3s ease;
 }
-.features .card a:hover{
+
+.features .card a:hover {
     color: #1e40af;
 }
-footer{
+
+footer {
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
 }
-footer .column .logo{
+
+footer .column .logo {
     max-width: 100px;
     margin-bottom: 2rem;
 }
-footer .column .socials{
+
+footer .column .socials {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-footer .column .socials a{
+
+footer .column .socials a {
     color: #000;
     border: 1px solid #000;
     padding: 5px 10px;
@@ -199,28 +211,41 @@ footer .column .socials a{
     border-radius: 100px;
     transition: all 0.3s ease;
 }
-footer .column .socials a:hover{
+
+footer .column .socials a:hover {
     color: #fff;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
-footer .about h4{
+
+footer .about h4 {
     color: #000;
     margin-bottom: 1.2rem;
     font-size: 30px;
     font-weight: 500;
 }
 
-footer .about > a{
+footer .about>a {
     display: block;
     color: #000;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
-footer .about > a:hover{
+
+footer .about>a:hover {
     color: #1a0e9c;
 }
-.copyright{
+
+.logo {
+    width: 150px;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+}
+
+.copyright {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -228,32 +253,85 @@ footer .about > a:hover{
     font-size: 0.8rem;
     text-align: center;
 }
-@media(width <900px){
-    .nav-links{
+
+.left-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #5379f5;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding-top: 60px;
+}
+.left-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    
+    transition: 0.3s;
+}
+.left-nav a:hover {
+    color: #f1f1f1;
+}
+.left-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.open-btn {
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #5379f5;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 18px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+@media(width <900px) {
+    .nav-links {
         display: none;
     }
-    header{
+
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
-    header .image{
+
+    header .image {
         grid-area: 1/1/2/2;
     }
-    .features{
+
+    .features {
         grid-template-columns: repeat(2, 1fr);
     }
-    footer{
+
+    footer {
         grid-template-columns: 1fr 200px;
     }
 }
 
 @media (width < 600px) {
-    header .image::before{
+    header .image::before {
         display: none;
     }
-    .features{
-        grid-template-columns:repeat(1, 1fr) ;
+
+    .features {
+        grid-template-columns: repeat(1, 1fr);
     }
-    footer{
+
+    footer {
         grid-template-columns: 1fr 150px;
     }
 }

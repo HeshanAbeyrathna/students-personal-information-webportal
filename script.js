@@ -15,3 +15,5 @@ link1.addEventListener('click', () => {
 link2.addEventListener('click', () => {
     scrollToElement('.column');
 });
+function openNav() { document.getElementById("left-nav").style.left = "0"; } 
+function closeNav() { document.getElementById("left-nav").style.left = "-250px"; }
