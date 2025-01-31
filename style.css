@@ -271,8 +271,9 @@ footer .about>a:hover {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #0a0000;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
     
     transition: 0.3s;
 }
@@ -298,6 +299,29 @@ footer .about>a:hover {
     top: 10px;
     left: 10px;
     z-index: 1;
+}
+.pargraph{
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.class-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    align-items: center;
+}
+.classes{
+    align-items: center;
+    justify-content: center;
+}
+
+.class-btn:hover {
+    background-color: #1e40af;
 }
 
 @media(width <900px) {
